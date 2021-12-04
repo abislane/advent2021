@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Inputs are unique to me and need not be committed
+inputs/
