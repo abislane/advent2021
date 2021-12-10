@@ -9,7 +9,7 @@ class Grid(object):
 		self.cols = len(nums[0])
 		self.marked = [[False for _ in range(self.cols)] for _ in range(self.rows)]
 
-def read_input() -> List[List[int]]:
+def read_input() -> Grid:
 	with open('inputs/day9.txt') as f:
 		lines = f.readlines()
 	return Grid([[int(x) for x in line.strip()] for line in lines])
