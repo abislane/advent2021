@@ -67,4 +67,6 @@ def part_two(parsed_input: Input) -> int:
 if __name__ == '__main__':
 	parsed_input = read_input()
 	result_one = part_one(parsed_input)
+	print(result_one)
 	result_two = part_two(parsed_input)
+	print(result_two)
