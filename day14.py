@@ -18,14 +18,6 @@ def read_input() -> Input:
 		transforms[parts[0]] = parts[1]
 	return Input(sequence, transforms)
 
-def do_transform(sequence: str, transforms: Dict[str, str]) -> str:
-	result = ''
-	for index in range(len(sequence) - 1):
-		result += sequence[index]
-		result += transforms[sequence[index:index+2]]
-	result += sequence[-1]
-	return result
-
 # Add dict2 into dict1 (note: assumes defaultdicts)
 def add_dicts(dict1: Dict[str, int], dict2: Dict[str, int]):
 	for key in dict2:
